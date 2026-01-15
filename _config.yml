@@ -51,9 +51,9 @@ search:
 
 # Docsearch https://docsearch.algolia.com/apply/
 algolia:
-  appId: 
-  apiKey: 
-  indexName: 
+  appId:
+  apiKey:
+  indexName:
 
 # 友链模块
 friends:
@@ -74,5 +74,11 @@ socialLink:
 
 # 主题色
 primaryColor: '#10b981'
+
+# 字体配置
+# fontFamily: 自定义字体，支持多个字体，用逗号分隔
+# 例如: fontFamily: '"PingFang SC", "Microsoft YaHei", sans-serif'
+# 留空则使用默认等宽字体
+fontFamily: #
 
 favicon: # Favicon 图标

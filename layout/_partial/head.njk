@@ -21,6 +21,9 @@
   <style>
     :root {
       --sea-color-primary: {{ theme.primaryColor }};
+      {% if theme.fontFamily %}
+      --sea-font-family: {{ theme.fontFamily }};
+      {% endif %}
     }
   </style>
 
