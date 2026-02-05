@@ -47,6 +47,10 @@ works:
     link: //www.izou.top
     cover: //imgs.izou.top/images/blog/2025/0118/1407.webp
 
+counter:
+  enable: false
+  type: # vercount | busuanzi
+
 footer:
   builtUpTime: 2024-05-28
 
