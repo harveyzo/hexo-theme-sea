@@ -30,7 +30,7 @@ menu:
 
 ## 首页配置
 
-> 首页展示分为个人信息和文章展示两个模块  
+> 首页展示分为个人信息和文章展示两个模块
 > 文章模块可配置展示 “推荐文章” 或者 “最近文章”，推荐文章需要在文章的 `Front-matter` 中配置 `recommend: true`
 
 ```yml _config.sea.yml
@@ -116,9 +116,9 @@ search:
 
 # Docsearch https://docsearch.algolia.com/apply/
 algolia:
-  appId: 
-  apiKey: 
-  indexName: 
+  appId:
+  apiKey:
+  indexName:
 ```
 
 ## 评论配置
@@ -145,6 +145,14 @@ giscus:
   emitmetadata:
   inputposition:
   loading:
+```
+
+## 网站计数
+
+```yml _config.sea.yml
+counter:
+  enable: false  # 是否启用
+  type:          # vercount | busuanzi
 ```
 
 ## 自定义代码块

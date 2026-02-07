@@ -21,7 +21,8 @@ theme:
 
 footer:
   home: Home
-  site_pv: 'PV: %s'
-  site_uv: 'UV: %s'
+  site_pv: Site PV
+  site_uv: Site UV
+  page_pv: Page views
   rss: RSS
   theme_source: Theme by %s

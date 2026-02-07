@@ -6,6 +6,10 @@
         {{ partial('_partial/post/post_date', {post_date: page.date}) }}
         {{ partial('_partial/post/post_categories', {post_categories: page.categories}) }}
         {{ partial('_partial/post/post_tags', {post_tags: page.tags}) }}
+        {% if theme.counter.enable and theme.counter.type %}
+          {% set counterIdPrefix = 'vercount_value' if theme.counter.type === 'vercount' else 'busuanzi_value' %}
+          <span class="sea-post-counter">{{ partial('svg/eye') }} {{ _p('footer.page_pv') }} <span id="{{ counterIdPrefix }}_page_pv">0</span></span>
+        {% endif %}
       </div>
     {% endif %}
   </header>

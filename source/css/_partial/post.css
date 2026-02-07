@@ -19,7 +19,8 @@
 
 .sea-post-time,
 .sea-post-tags,
-.sea-post-categories {
+.sea-post-categories,
+.sea-post-counter {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
@@ -34,6 +35,10 @@
 
 .sea-post-meta__center {
   justify-content: center;
+}
+
+.sea-post-counter {
+  color: var(--sea-color-text-2);
 }
 
 .sea-article-catalog-title {

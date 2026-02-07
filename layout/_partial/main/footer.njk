@@ -15,6 +15,13 @@
       {% endfor %}
     </div>
   </div>
+  {% if theme.counter.enable and theme.counter.type %}
+    {% set counterIdPrefix = 'vercount_value' if theme.counter.type === 'vercount' else 'busuanzi_value' %}
+    <div class="sea-footer-row sea-footer-counter">
+      <span class="sea-footer-counter-item">{{ _p('footer.site_pv') }} <span id="{{ counterIdPrefix }}_site_pv">0</span></span>
+      <span class="sea-footer-counter-item">{{ _p('footer.site_uv') }} <span id="{{ counterIdPrefix }}_site_uv">0</span></span>
+    </div>
+  {% endif %}
   {% set current = moment().year() %}
   {% set since = moment(theme.footer.builtUpTime).year() %}
   <div class="sea-footer-row">

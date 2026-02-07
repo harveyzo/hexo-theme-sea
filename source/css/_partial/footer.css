@@ -34,3 +34,7 @@
 .sea-footer-theme-by .theme:hover {
   color: var(--sea-color-primary);
 }
+
+.sea-footer-counter {
+  gap: 1rem;
+}
